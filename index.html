@@ -131,7 +131,7 @@
             "Discipline", "Holy", "Shadow","Discipline", "Holy", "Shadow","Discipline", "Holy", "Shadow","Discipline", "Holy", "Shadow"
         ],
         [ # warlock
-            "Affliction", "Destruction", "Demonology", "Destruction"
+            "Affliction", "Destruction", "Demonology","Affliction", "Destruction", "Demonology","Affliction", "Destruction", "Demonology","Affliction", "Destruction", "Demonology"
         ],
         [ # paladin
             "Holy", "Protection", "Retribution","Holy", "Protection", "Retribution","Holy", "Protection", "Retribution","Holy", "Protection", "Retribution"
@@ -146,19 +146,19 @@
             "Brewmaster", "Mistweaver", "Windwalker", "Brewmaster", "Mistweaver", "Windwalker","Brewmaster", "Mistweaver", "Windwalker", "Brewmaster", "Mistweaver", "Windwalker"
         ],
         [ # demon hunter
-            "Havoc", "Vengence", "Havoc", "Vengence"
+            "Havoc", "Vengence", "Havoc", "Vengence","Havoc", "Vengence", "Havoc", "Vengence","Havoc", "Vengence", "Havoc", "Vengence"
         ],
         [ # death knight
-            "Blood", "Frost", "Unholy", "Frost"
+            "Blood", "Frost", "Unholy","Blood", "Frost", "Unholy","Blood", "Frost", "Unholy","Blood", "Frost", "Unholy"
         ],
         [ # evoker
-            "Augmentation", "Devastation", "Preservation", "Devastation"
+            "Augmentation", "Devastation", "Preservation","Augmentation", "Devastation", "Preservation","Augmentation", "Devastation", "Preservation","Augmentation", "Devastation", "Preservation",
         ]
     ]
     def random_character():
         rnd_class_index = rnd.randint(0, 12)
         rnd_race_index = rnd.randint(0, 23)
-        rnd_spec_index = rnd.randint(0, 3)
+        rnd_spec_index = rnd.randint(0, 11)
 
         header = Element("Class_race_spec")
         header.write(f"{race_list[rnd_class_index][rnd_race_index]} {class_list[rnd_class_index]}({spec_list[rnd_class_index][rnd_spec_index]})")
