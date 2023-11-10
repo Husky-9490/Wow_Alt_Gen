@@ -100,49 +100,49 @@ race_list = [
     ]
 ]
 spec_list = [
-    [ # warrior
-        "Arms", "Fury", "Protection", "Fury"
-    ],
-    [ # hunter
-        "Marksmanship", "Beast Mastery", "Survival", "Beast Mastery"
-    ],
-    [ # mage
-        "Arcane", "Frost", "Fire", "Frost"
-    ],
-    [ # rogue
-        "Assassination", "Outlaw", "Sublety", "Outlaw"
-    ],
-    [ # priest
-        "Discipline", "Holy", "Shadow", "Holy"
-    ],
-    [ # warlock
-        "Affliction", "Destruction", "Demonology", "Destruction"
-    ],
-    [ # paladin
-        "Holy", "Protection", "Retribution", "Protection"
-    ],
-    [ # druid
-        "Balance", "Feral", "Guardian", "Restoration"
-    ],
-    [ # shaman
-        "Elemental", "Enhancement", "Restoration", "Elemental"
-    ],
-    [ # monk
-        "Brewmaster", "Mistweaver", "Windwalker", "Brewmaster"
-    ],
-    [ # demon hunter
-        "Havoc", "Vengence", "Havoc", "Vengence"
-    ],
-    [ # death knight
-        "Blood", "Frost", "Unholy", "Frost"
-    ],
-    [ # evoker
-        "Augmentation", "Devastation", "Preservation", "Devastation"
-    ]
+    
+        [ # warrior
+            "Arms", "Fury", "Protection","Arms", "Fury", "Protection","Arms", "Fury", "Protection","Arms", "Fury", "Protection"
+        ],
+        [ # hunter
+            "Marksmanship", "Beast Mastery", "Survival","Marksmanship", "Beast Mastery", "Survival","Marksmanship", "Beast Mastery", "Survival","Marksmanship", "Beast Mastery", "Survival"
+        ],
+        [ # mage
+            "Arcane", "Frost", "Fire","Arcane", "Frost", "Fire","Arcane", "Frost", "Fire","Arcane", "Frost", "Fire"
+        ],
+        [ # rogue
+            "Assassination", "Outlaw", "Sublety","Assassination", "Outlaw", "Sublety","Assassination", "Outlaw", "Sublety","Assassination", "Outlaw", "Sublety"
+        ],
+        [ # priest
+            "Discipline", "Holy", "Shadow","Discipline", "Holy", "Shadow","Discipline", "Holy", "Shadow","Discipline", "Holy", "Shadow"
+        ],
+        [ # warlock
+            "Affliction", "Destruction", "Demonology","Affliction", "Destruction", "Demonology","Affliction", "Destruction", "Demonology","Affliction", "Destruction", "Demonology"
+        ],
+        [ # paladin
+            "Holy", "Protection", "Retribution","Holy", "Protection", "Retribution","Holy", "Protection", "Retribution","Holy", "Protection", "Retribution"
+        ],
+        [ # druid
+            "Balance", "Feral", "Guardian", "Restoration","Balance", "Feral", "Guardian", "Restoration","Balance", "Feral", "Guardian", "Restoration"
+        ],
+        [ # shaman
+            "Elemental", "Enhancement", "Restoration","Elemental", "Enhancement", "Restoration","Elemental", "Enhancement", "Restoration","Elemental", "Enhancement", "Restoration"
+        ],
+        [ # monk
+            "Brewmaster", "Mistweaver", "Windwalker", "Brewmaster", "Mistweaver", "Windwalker","Brewmaster", "Mistweaver", "Windwalker", "Brewmaster", "Mistweaver", "Windwalker"
+        ],
+        [ # demon hunter
+            "Havoc", "Vengence", "Havoc", "Vengence","Havoc", "Vengence", "Havoc", "Vengence","Havoc", "Vengence", "Havoc", "Vengence"
+        ],
+        [ # death knight
+            "Blood", "Frost", "Unholy","Blood", "Frost", "Unholy","Blood", "Frost", "Unholy","Blood", "Frost", "Unholy"
+        ],
+        [ # evoker
+            "Augmentation", "Devastation", "Preservation","Augmentation", "Devastation", "Preservation","Augmentation", "Devastation", "Preservation","Augmentation", "Devastation", "Preservation",
+        ]
 ]
-
 rnd_class_index = rnd.randint(0, 12)
 rnd_race_index = rnd.randint(0, 23)
-rnd_spec_index = rnd.randint(0, 3)
+rnd_spec_index = rnd.randint(0, 11)
 
 print(f"{race_list[rnd_class_index][rnd_race_index]} {class_list[rnd_class_index]}({spec_list[rnd_class_index][rnd_spec_index]})")
