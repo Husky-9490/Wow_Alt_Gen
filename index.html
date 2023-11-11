@@ -12,8 +12,6 @@
     <h1>Wow Alt Generator</h1>
     <h2 id="Class_race_spec">Press Generate.</h2>
     <button py-click="random_character()" class="py-button">Generate</button>
-    <h2>History</h2>
-    <p id="history"></p>
     <py-script>
     import random as rnd
 
@@ -166,7 +164,6 @@
 
         header = Element("Class_race_spec")
         header.write(f"{race_list[rnd_class_index][rnd_race_index]} {class_list[rnd_class_index]}({spec_list[rnd_class_index][rnd_spec_index]})")
-        history.write(f"{race_list[rnd_class_index][rnd_race_index]} {class_list[rnd_class_index]}({spec_list[rnd_class_index][rnd_spec_index]})")
         
     
 </py-script>
