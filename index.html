@@ -155,14 +155,18 @@
             "Augmentation", "Devastation", "Preservation","Augmentation", "Devastation", "Preservation","Augmentation", "Devastation", "Preservation","Augmentation", "Devastation", "Preservation",
         ]
     ]
+    expansion_list = [
+        "Shadowlands","Battle For Azeroth", "Legion", "Warlords of Draenor", "Mists of Pandaria", "Cataclysm", "Wrath of the Lich King", "The Burning Crusade"
+    ]
 
     def random_character():
         rnd_class_index = rnd.randint(0, 12)
         rnd_race_index = rnd.randint(0, 23)
         rnd_spec_index = rnd.randint(0, 11)
-
+        rnd_expansion_index = rnd.randint(0,7)
+        
         header = Element("Class_race_spec")
-        header.write(f"{race_list[rnd_class_index][rnd_race_index]} {class_list[rnd_class_index]}({spec_list[rnd_class_index][rnd_spec_index]})")
+        header.write(f"{race_list[rnd_class_index][rnd_race_index]} {class_list[rnd_class_index]}({spec_list[rnd_class_index][rnd_spec_index]}) played in {expansion_list[rnd_expansion_index]}")
         
     
 </py-script>
