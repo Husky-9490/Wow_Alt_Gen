@@ -4,3 +4,6 @@ There are no promises though.
  
 # Dependencies
 for the commandline python file, you will need the latest version of python.
+
+# Updates
+Its official, Wow alt generator is getting a javascript port.
